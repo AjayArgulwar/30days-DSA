@@ -13,9 +13,9 @@ vector<int> findSubarrayWithSum(const vector<int>& arr, int targetSum) {
             if (currentSum == targetSum) {
 
                 subarray.assign(arr.begin() + start, arr.begin() + end + 1);
-                return subarray;    ````````        
+                return subarray;       
             }
-        }`
+        }
     }
 
     return subarray;
@@ -36,6 +36,5 @@ int main() {
     } else {
         cout << "No subarray with sum " << targetSum << " is found." << endl;
     }
-
-    return 0;
+return 0;
 }
